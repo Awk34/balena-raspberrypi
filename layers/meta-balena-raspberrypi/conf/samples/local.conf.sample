@@ -11,11 +11,8 @@
 #MACHINE ?= "npe-x500-m3"
 #MACHINE ?= "rt-rpi-300"
 
-BALENA_STORAGE_rt-rpi-300 = "overlay2"
-BALENA_STORAGE_raspberrypi4-64 = "overlay2"
-BALENA_STORAGE_raspberrypi400-64 = "overlay2"
-BALENA_STORAGE_revpi-connect = "overlay2"
-BALENA_STORAGE_nebra-hnt = "overlay2"
+# We default to overlayfs docker storage driver
+BALENA_STORAGE = "overlay2"
 
 # More info meta-resin/README.md
 #TARGET_REPOSITORY ?= ""
